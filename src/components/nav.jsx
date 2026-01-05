@@ -51,7 +51,7 @@ const Navbar = () => {
               { name: "Home", path: "/" },
               { name: "About", path: "/about" },
               { name: "Products", path: "/products" },
-              { name: "Login", path: "/login" },
+              { name: "Login", path: "/auth" },
             ].map((link) => (
               <li key={link.name} className="nav-item">
                 <NavLink
@@ -76,8 +76,8 @@ const Navbar = () => {
 
             {/* Register as special button */}
             <li className="nav-item">
-              <NavLink
-                to="/register"
+              <a
+                href="/auth"
                 className="nav-link"
                 style={{
                   color: "#fff",
@@ -93,7 +93,7 @@ const Navbar = () => {
                 onMouseLeave={(e) => (e.target.style.background = "rgba(255,215,0,0.2)")}
               >
                 Register
-              </NavLink>
+              </a>
             </li>
           </ul>
         </div>
