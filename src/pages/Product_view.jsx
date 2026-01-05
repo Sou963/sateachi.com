@@ -49,9 +49,9 @@ const ProductView = () => {
           </p>
 
           <div className="mt-4">
-            <button className="btn btn-primary btn-lg rounded-pill w-100">
+            <a href="/buy" className="btn btn-primary btn-lg rounded-pill w-100">
               Buy Now
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -1,0 +1,14 @@
+/* Adjust logo */
+.auth-logo {
+  max-width: 180px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Tabs pointer & active weight */
+.nav-tabs .nav-link {
+  cursor: pointer;
+}
+.nav-tabs .nav-link.active {
+  font-weight: 600;
+}

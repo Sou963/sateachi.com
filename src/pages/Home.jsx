@@ -118,33 +118,34 @@ const Home = () => {
       </section>
 
       {/* ---------------- Categories Section ---------------- */}
+      {/* ---------------- Categories Section ---------------- */}
       <section className="mb-5 text-center">
-        <h2 className="mb-4" style={{ fontWeight: "bold", color: "#007bff" }}>
-          Shop by Category
-        </h2>
+        <h2 className="mb-4 fw-bold text-primary">Shop by Category</h2>
+
         <div className="d-flex flex-wrap justify-content-center gap-3">
           {categories.map((cat, idx) => (
             <div
               key={idx}
-              className="card p-3 bg-primary text-white"
+              className="card bg-primary text-white d-flex align-items-center justify-content-center"
               style={{
-                width: "180px",
-                borderRadius: "20px",
-                transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                width: "200px",
+                height: "80px", // 🔽 reduced height
+                borderRadius: "16px",
                 cursor: "pointer",
+                transition: "0.3s",
               }}
+              onClick={() => navigate(`/products?category=${cat}`)}
               onMouseEnter={(e) => {
-                e.target.style.transform = "translateY(-10px)";
-                e.target.style.boxShadow = "0 15px 35px rgba(0,123,255,0.3)";
+                e.currentTarget.style.transform = "translateY(-6px)";
+                e.currentTarget.style.boxShadow =
+                  "0 12px 25px rgba(0,123,255,0.35)";
               }}
               onMouseLeave={(e) => {
-                e.target.style.transform = "translateY(0)";
-                e.target.style.boxShadow = "none";
+                e.currentTarget.style.transform = "translateY(0)";
+                e.currentTarget.style.boxShadow = "none";
               }}
             >
-              <h6 className="text-capitalize" style={{ fontWeight: "bold" }}>
-                {cat}
-              </h6>
+              <h6 className="fw-bold text-capitalize mb-0">{cat}</h6>
             </div>
           ))}
         </div>
