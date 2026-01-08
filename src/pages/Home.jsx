@@ -116,9 +116,7 @@ const Home = () => {
           </button>
         </div>
       </section>
-
-      {/* ---------------- Categories Section ---------------- */}
-      {/* ---------------- Categories Section ---------------- */}
+  {/* ---------------- Categories Section ---------------- */}
       <section className="mb-5 text-center">
         <h2 className="mb-4 fw-bold text-primary">Shop by Category</h2>
 
